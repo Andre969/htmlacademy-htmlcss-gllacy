@@ -22,9 +22,15 @@
           </li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-navigation-search">Поиск</li>
-          <li class="user-navigation-logo">Вход</li>
-          <li class="user-navigation-cart">2 товара</li>
+          <li class="user-navigation-search">
+            <a class="user-navigation-search-link" href="search.html">Поиск</a>
+          </li>
+          <li class="user-navigation-logo">
+            <a class="user-navigation-logo-link" href="login.html">Вход</a>
+          </li>
+          <li class="user-navigation-cart">
+            <a class="user-navigation-cart-link" href="cart.html">Пусто</a>
+          </li>
         </ul>
         <p class="main-header-phones">
           С 10 до 20, ежедневно
@@ -45,9 +51,9 @@
             </p>
             <a class="button slider-button" href="#">Давайте оба!</a>
             <p class="slider-bullet-list">
-              <span class="slider-bullet-item-current">o</span>
-              <span  class="slider-bullet-item">o</span>
-              <span  class="slider-bullet-item">o</span>
+              <button class="slider-bullet-item-current" aria-label="Текущий слайдер - крем-брюле и пломбир с малиновым джемом"></button>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер шоколадный пломбир и лимонный сорбет"></button>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер пломбир с помадкой и клубничный щербет"></button>
             </p>
           </li>
           <li class="offer-item">
@@ -57,9 +63,9 @@
             </p>
             <a class="button slider-button" href="#">Давайте оба!</a>
             <p class="slider-bullet-list">
-              <span class="slider-bullet-item">o</span>
-              <span  class="slider-bullet-item-current">o</span>
-              <span  class="slider-bullet-item">o</span>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер крем-брюле и пломбир с малиновым джемом"></button>
+              <button class="slider-bullet-item-current" aria-label="Текущий слайдер - шоколадный пломбир и лимонный сорбет"></button>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер пломбир с помадкой и клубничный щербет"></button>
             </p>
           </li>
           <li class="offer-item">
@@ -69,9 +75,9 @@
             </p>
             <a class="button slider-button" href="#">Давайте оба!</a>
             <p class="slider-bullet-list">
-              <span class="slider-bullet-item">o</span>
-              <span  class="slider-bullet-item">o</span>
-              <span  class="slider-bullet-item-current">o</span>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер крем-брюле и пломбир с малиновым джемом"></button>
+              <button class="slider-bullet-item" aria-label="Выбрать слайдер шоколадный пломбир и лимонный сорбет"></button>
+              <button class="slider-bullet-item-current" aria-label="Текущий слайдер - пломбир с помадкой и клубничный щербет"></button>
             </p>
           </li>
         </ul>
@@ -184,7 +190,13 @@
           <li class="miscellanea-item miscellanea-item-right">
             <h3 class="visually-hidden">Электронная рассылка</h3>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <!-- Здесь будет форма -->
+            <form class="miscellanea-email-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="mailing-field">Электронная почта</label>
+                <input id="mailing-field" type="email" name="mailing" value="" placeholder="Электронная почта"/>
+              </p>
+              <button class="button miscellanea-button" type="submit">Отправить</button>
+            </form>
           </li>
         </ul>
       </section>
@@ -213,20 +225,20 @@
       </section>
     </main>
     <footer class="main-footer">
-        <ul class="footer-social">
-          <li>
-            <a class="social-button social-button-twitter" href="#">Твиттер</a>
-          </li>
-          <li>
-            <a class="social-button social-button-instagram" href="#">Инстаграм</a>
-          </li>
-          <li>
-            <a class="social-button social-button-facebook" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button social-button-vkontakte" href="#">Вконтакте</a>
-          </li>
-        </ul>
+      <ul class="footer-social">
+        <li>
+          <a class="social-button social-button-twitter" href="#" aria-label="Твиттер"></a>
+        </li>
+        <li>
+          <a class="social-button social-button-instagram" href="#" aria-label="Инстаграм"></a>
+        </li>
+        <li>
+          <a class="social-button social-button-facebook" href="#" aria-label="Фейсбук"></a>
+        </li>
+        <li>
+          <a class="social-button social-button-vkontakte" href="#" aria-label="Вконтакте"></a>
+        </li>
+      </ul>
       <div class="footer-documents">
         <ul class="footer-documents-list">
           <li class="footer-documents-item footer-documents-item-heart">
@@ -246,30 +258,60 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" alt="Логотип «HTML Academy»"/>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="300" height="102" alt="Логотип «HTML Academy»"/>
         </a>
-        <b>
-          Сделано в
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          &copy; 2017
-        </b>
+        <p>
+          <b>
+            Сделано в
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            &copy; 2017
+          </b>
+        </p>
       </div>
     </footer>
-  <section class="modal modal-login">
-    <h2 class="visually-hidden">Личный кабинет</h2>
-    <!-- Здесь будет форма -->
-    <span><a href="#">Забыли пароль?</a></span>
-    <span><a href="#">Новая регистрация</a></span>
-  </section>
-  <section class="modal modal-search">
-    <h2 class="visually-hidden">Поиск по сайту</h2>
-    <!-- Здесь будет форма -->
-  </section>
-  <section class="modal modal-map">
-    <h2>Мы обязательно ответим</h2>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
-  </section>
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-field">Логин</label>
+          <input id="login-field" type="text" name="login" value="" placeholder="Электронная почта"/>
+        </p>
+        <p>
+          <label class="visually-hidden" for="password-field">Пароль</label>
+          <input id="password-field" type="password" name="password" value="" placeholder="Пароль"/>
+        </p>
+        <p>
+          <a href="#">Забыли пароль?</a>
+          <br/>
+          <a href="#">Новая регистрация</a>
+        </p>
+        <button class="button modal-login-button" type="submit">Войти</button>
+      </form>
+    </section>
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Поиск по сайту</h2>
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-field">Поиск</label>
+        <input id="search-field" type="text" name="search" value="" placeholder="Что ищем?"/>
+      </form>
+    </section>
+    <section class="modal modal-feedback">
+      <h2>Мы обязательно ответим</h2>
+      <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="name-field">Имя пользователя для обратной связи</label>
+          <input id="name-field" type="text" name="name" value="" placeholder="Как вас зовут?"/>
+        </p>
+        <p>
+          <label class="visually-hidden" for="email-field">Почта пользователя для обратной связи</label>
+          <input id="email-field" type="email" name="email" value="" placeholder="Ваша почта для ответа?"/>
+        </p>
+        <label class="visually-hidden" for="comment-field">Ваш комментарий</label>
+        <textarea id="comment-field" name="comment" rows="7">Напишите что-нибудь...</textarea>
+        <button class="button modal-feedback-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
