@@ -53,8 +53,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <legend>Сортировка:</legend>
+          <fieldset class="sorting-group">
+            <legend class="sorting-legend">Сортировка:</legend>
             <label class="visually-hidden" for="sorting-field">Опции сортировки</label>
             <select id="sorting-field" name="sorting">
               <option value="1">по популярности</option>
@@ -63,16 +63,13 @@
               <option value="4">по жирности</option>
             </select>
           </fieldset>
-          <fieldset>
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <label class="visually-hidden" for="min-price-field">Минимальная цена</label>
-            <input id="min-price-field" type="range" name="min-price" min="100" max="500"/>
-            <label class="visually-hidden" for="max-price-field">Максимальная цена</label>
-            <input id="max-price-field" type="range" name="max-price" min="100" max="500"/>
+          <fieldset class="price-group">
+            <legend class="price-legend">Цена: 100 руб. - 500 руб.</legend>
+            <!-- Здесь будет ползунок на двух кнопках -->
           </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
-            <ul>
+          <fieldset class="fatness-group">
+            <legend class="fatness-legend">Жирность:</legend>
+            <ul class="fatness-list">
               <li class="filters-option">
                 <input class="visually-hidden filters-input filters-input-radio" id="zero-field" type="radio" name="fat-content" value="zero" checked/>
                 <label for="zero-field">0%</label>
@@ -91,9 +88,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
-            <ul>
+          <fieldset class="filler-group">
+            <legend class="filler-legend">Наполнители:</legend>
+            <ul class="filler-list">
               <li class="filters-option">
                 <input class="visually-hidden filters-input filters-input-checkbox" id="chocolate-field" type="checkbox" name="chocolate" checked/>
                 <label for="chocolate-field">шоколадные</label>
@@ -307,16 +304,16 @@
     <footer class="main-footer">
       <ul class="footer-social">
         <li>
-          <a class="social-button social-button-twitter" href="#" aria-label="Твиттер"></a>
+          <a class="social-button social-button-twitter" href="#" aria-label="Твиттер">Твиттер</a>
         </li>
         <li>
-          <a class="social-button social-button-instagram" href="#" aria-label="Инстаграм"></a>
+          <a class="social-button social-button-instagram" href="#" aria-label="Инстаграм">Инстаграм</a>
         </li>
         <li>
-          <a class="social-button social-button-facebook" href="#" aria-label="Фейсбук"></a>
+          <a class="social-button social-button-facebook" href="#" aria-label="Фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button social-button-vkontakte" href="#" aria-label="Вконтакте"></a>
+          <a class="social-button social-button-vkontakte" href="#" aria-label="Вконтакте">Вконтакте</a>
         </li>
       </ul>
       <div class="footer-documents">
