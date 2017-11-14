@@ -53,8 +53,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="sorting-group">
-            <legend class="sorting-legend">Сортировка:</legend>
+          <fieldset class="filters-fieldset">
+            <legend class="filters-legend">Сортировка:</legend>
             <label class="visually-hidden" for="sorting-field">Опции сортировки</label>
             <select id="sorting-field" name="sorting">
               <option value="1">по популярности</option>
@@ -63,12 +63,12 @@
               <option value="4">по жирности</option>
             </select>
           </fieldset>
-          <fieldset class="price-group">
-            <legend class="price-legend">Цена: 100 руб. - 500 руб.</legend>
+          <fieldset class="filters-fieldset">
+            <legend class="filters-legend">Цена: 100 руб. - 500 руб.</legend>
             <!-- Здесь будет ползунок на двух кнопках -->
           </fieldset>
-          <fieldset class="fatness-group">
-            <legend class="fatness-legend">Жирность:</legend>
+          <fieldset class="filters-fieldset">
+            <legend class="filters-legend">Жирность:</legend>
             <ul class="fatness-list">
               <li class="filters-option">
                 <input class="visually-hidden filters-input filters-input-radio" id="zero-field" type="radio" name="fat-content" value="zero" checked/>
@@ -88,8 +88,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filler-group">
-            <legend class="filler-legend">Наполнители:</legend>
+          <fieldset class="filters-fieldset">
+            <legend class="filters-legend">Наполнители:</legend>
             <ul class="filler-list">
               <li class="filters-option">
                 <input class="visually-hidden filters-input filters-input-checkbox" id="chocolate-field" type="checkbox" name="chocolate" checked/>
@@ -278,7 +278,7 @@
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-prev">
-            <a class="pagination-item-prev-icon" href="#" aria-label="Перейти на предыдущую страницу"></a>
+            <a class="pagination-item-prev-icon" href="#" aria-label="Перейти на предыдущую страницу">Предыдущая страница</a>
           </li>
           <li class="pagination-item pagination-item-current">
             <a>1</a>
@@ -296,7 +296,7 @@
             <a href="#" aria-label="Выбрать страницу 5">5</a>
           </li>
           <li class="pagination-item pagination-item-next">
-            <a class="pagination-item-next-icon" href="#" aria-label="Перейти на следующую страницу"></a>
+            <a class="pagination-item-next-icon" href="#" aria-label="Перейти на следующую страницу">Следующая страница</a>
           </li>
         </ul>
       </section>
