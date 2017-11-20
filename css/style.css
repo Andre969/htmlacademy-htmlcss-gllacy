@@ -175,3 +175,92 @@ a {
   line-height: 24px;
   border-radius: 40px;
 }
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  text-align: center;
+}
+
+.catalog-item:hover {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500px;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.catalog-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-weight {
+  font-size: 30px;
+}
+
+.features {
+  background-color: #efe2ca;
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: left;
+  color: rgb(50, 50, 50);
+  background-color: transparent;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+  color: rgb(50, 50, 50);  
+  background-color: transparent;  
+}
+
+.miscellanea-list {
+  list-style: none;
+}
+
+.miscellanea-item {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.miscellanea-item-left a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(50, 50, 50);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #353535;
+}
+
+.miscellanea-item-left p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: left;
+  color: rgb(50, 50, 50);  
+  background-color: rgba(255, 255, 255, 0.8); 
+}
