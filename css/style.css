@@ -234,8 +234,8 @@ a {
   line-height: 22px;
   font-weight: 400;
   text-align: left;
-  color: rgb(50, 50, 50);  
-  background-color: transparent;  
+  color: rgb(50, 50, 50);
+  background-color: transparent;
 }
 
 .miscellanea-list {
@@ -243,7 +243,7 @@ a {
 }
 
 .miscellanea-item {
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .miscellanea-item-left a {
@@ -261,6 +261,291 @@ a {
   line-height: 22px;
   font-weight: 500;
   text-align: left;
-  color: rgb(50, 50, 50);  
-  background-color: rgba(255, 255, 255, 0.8); 
+  color: rgb(50, 50, 50);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.miscellanea-item-right p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.miscellanea-email-form-item input {
+  font: inherit;
+  font-size: 16;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.miscellanea-email-form-item input:hover {
+  border: 1px solid rgba(154, 154, 154, 0.52);
+}
+
+.miscellanea-email-form-item input:focus {
+  border: 1px solid rgba(46, 136, 228, 0.52);
+}
+
+.miscellanea-button {
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+}
+
+.contacts-address,
+.contacts-phones {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.contacts-address b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.contacts-phones b {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.contacts-phones span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.contacts-button {
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-documents-list {
+  list-style: none;
+}
+
+.footer-documents-item a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-documents-item-heart a {
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-documents-item a:hover,
+.footer-documents-item-heart a:hover {
+  color: rgb(255, 188, 158);
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+}
+
+.footer-copyright-madein {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fefefe;
+}
+
+.footer-copyright-madein a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fefefe;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.2);
+}
+
+.modal {
+  color: #000000;
+  background-color: rgb(248, 247, 244);
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.modal h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+  background-color: rgb(248, 247, 244);
+}
+
+.modal-login-button,
+.modal-feedback-button {
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+}
+
+.modal-login-form input,
+.modal-search-form input,
+.modal-feedback-form input,
+.modal-feedback-form textarea {
+  font: inherit;
+  font-size: 16;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.modal-login-form input:hover,
+.modal-search-form input:hover,
+.modal-feedback-form input:hover,
+.modal-feedback-form textarea:hover {
+  border: 1px solid rgba(154, 154, 154, 0.52);
+}
+
+.modal-login-form input:focus,
+.modal-search-form input:focus,
+.modal-feedback-form input:focus,
+.modal-feedback-form textarea:focus {
+  border: 1px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal-login-form a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  background-color: rgb(248, 247, 244);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.modal-login-form a:hover,
+.modal-login-form a:focus {
+  color: rgb(255, 188, 158);
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgb(255, 188, 158);
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: rgba(248, 247, 244, 0.4);
+  cursor: pointer;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filters-button {
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+}
+
+.modal-product-view-button {
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+}
+
+.modal-products td {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.modal-products-price {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #999999;
+  background-color: #f8f7f4;
+}
+
+.modal-products-total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+  background-color: #f8f7f4;  
 }
