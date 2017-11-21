@@ -50,6 +50,11 @@ a {
   list-style: none;
 }
 
+.site-navigation>li {
+  display: inline-block;
+  position: relative;
+}
+
 .site-navigation a {
   font-size: 16px;
   line-height: 18px;
@@ -70,6 +75,16 @@ a {
   background-color: #f8f7f4;
   border-bottom: none;
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+.site-navigation-item-sub-menu {
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+
+.site-navigation>li:hover .site-navigation-item-sub-menu {
+  display: block;
 }
 
 .user-navigation {
@@ -547,5 +562,5 @@ a {
   line-height: 18px;
   font-weight: 700;
   color: #323232;
-  background-color: #f8f7f4;  
+  background-color: #f8f7f4;
 }
