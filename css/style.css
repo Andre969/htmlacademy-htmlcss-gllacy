@@ -50,11 +50,6 @@ a {
   list-style: none;
 }
 
-.site-navigation>li {
-  display: inline-block;
-  position: relative;
-}
-
 .site-navigation a {
   font-size: 16px;
   line-height: 18px;
@@ -77,13 +72,18 @@ a {
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
-.site-navigation-item-sub-menu {
+.site-navigation > li {
+  display: inline-block;
+  position: relative;
+}
+
+.catalog-sub-menu {
   position: absolute;
   display: none;
   list-style: none;
 }
 
-.site-navigation>li:hover .site-navigation-item-sub-menu {
+.site-navigation-item-submenu:hover .catalog-sub-menu {
   display: block;
 }
 
