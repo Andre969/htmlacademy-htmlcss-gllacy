@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
 
 /*мои первоначальные кнопки*/
 
-/* 
+/*
 .button:hover,
 .button:focus {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
@@ -860,8 +860,6 @@ body {
   margin: 0;
   margin-bottom: 30px;
   padding: 0 27px;
-  /*удалить*/
-  outline: 10px solid rgba(255, 0, 0, 0.1);
 }
 
 .bunners-list {
@@ -876,7 +874,7 @@ body {
   position: relative;
   margin: 0;
   padding: 16px 19px;
-  padding-bottom: 23px; 
+  padding-bottom: 23px;
   width: 560px;
   border-radius: 15px;
 }
@@ -914,13 +912,13 @@ body {
 }
 
 .bunners-item-right-image {
-  background: url("../img/bunner-right.jpg") no-repeat #452b1f;    
+  background: url("../img/bunner-right.jpg") no-repeat #452b1f;
 }
 
 .catalog {
   margin: 0;
   margin-bottom: 22px;
-  padding: 0;  
+  padding: 0;
   /*удалить*/
   min-height: 350px;
   outline: 10px solid rgba(255, 0, 0, 1);
@@ -952,12 +950,12 @@ body {
 
 .features {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   padding: 0 27px;
   /*временно*/
   /*min-height: 306px;*/
   background: transparent;
-  outline: 10px solid rgba(255, 0, 0, 0.1);
+  outline: 10px solid rgba(255, 0, 0, 1);
 }
 
 .features-wrapper {
@@ -965,10 +963,11 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 25px 20px;
-  background-color: #efe2ca;  
+  background: url("../img/waffer.png") repeat #efe2ca;
+  border-radius: 15px;
 /*  padding-bottom: 23px;*/
   /* --- временно для сетки --- */
-  outline: 10px solid rgba(255, 0, 0, 1);
+  background-color1: transparent;
 }
 
 .features-wrapper p {
@@ -979,16 +978,7 @@ body {
   font-weight: 500;
   line-height: 30px;
   color: #323232;
-  background-color: #efe2ca;
-  /* --- временно для сетки --- */
-  background: transparent;
-  outline: 1px solid red;
-}
 
-.features-list-container {
-  /* --- временно для сетки --- */
-  background: transparent;
-  outline: 1px solid red;
 }
 
 .features-list {
@@ -998,29 +988,22 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  /* --- временно для сетки --- */
-  background: transparent;
 }
 
 .features-item {
   margin: 0;
-  padding: 0;
-  /*временно*/
-  width: 545px;
-  height: 95px;
-  background: transparent;
-  outline: 1px solid yellow;
+  padding: 14px 5px 7px 56px;
+  width: 540px;
 }
 
 .miscellanea {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 40px;
-  padding: 0;
-  width: 1146px;
-  min-height: 220px;
+  padding: 0 27px;
   /*временно*/
+  min-height: 220px;
   background: transparent;
-  outline: 1px solid green;
+  outline: 10px solid rgba(255, 0, 0, 1);
 }
 
 .miscellanea-list {
@@ -1036,24 +1019,33 @@ body {
 .miscellanea-item {
   margin: 0;
   padding: 0;
-  /*временно*/
   width: 560px;
   height: 220px;
-  background: transparent;
-  outline: 1px solid yellow;
+  border-radius: 15px;
+  /*временно*/
+  /*background: transparent;*/
+  /*outline: 10px solid rgba(255, 0, 0, 0.1);*/
+}
+
+.miscellanea-item-left {
+  background-color: #ffffff;
+  background-image: url("../img/news-1.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .contacts {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 1200px;
   height: 430px;
   /*временно*/
   background: transparent;
-  outline: 1px solid green;
+  outline: 10px solid rgba(255, 0, 0, 1);
 }
 
 .contacts-wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -1067,30 +1059,28 @@ body {
   padding: 0;
   width: 1200px;
   height: 430px;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid yellow;
 }
 
 .contacts-wrapper .container {
+  position: absolute;
+  bottom: 62px;
+  right: 27px;
   margin: 0;
   padding: 0;
-  margin-top: 62px;
-  margin-left: -329px;
   width: 302px;
-  height: 305px;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid yellow;
+  min-height: 305px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
 }
 
 .main-footer {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 18px;
   padding: 0;
+  min-height: 60px;
   /*временно*/
   background: transparent;
-  outline: 1px solid green;
+  outline: 10px solid rgba(255, 0, 0, 1);
 }
 
 .main-footer .container {
