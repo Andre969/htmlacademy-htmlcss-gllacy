@@ -15,7 +15,6 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
-  background-color: #849d8f;
 }
 
 img {
@@ -84,7 +83,16 @@ input[type="radio"].visually-hidden {
 }*/
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 600px;
   list-style: none;
+}
+
+.site-navigation li {
+  margin-right: 28px;
 }
 
 .site-navigation a {
@@ -125,7 +133,22 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.user-navigation li {
+  margin: 0;
+  margin-left: 20px;
+  padding: 5px 20px;
+  height: 30px;
+  background-color: red;
+  border-radius: 15px;
 }
 
 .user-navigation a {
@@ -316,8 +339,8 @@ input[type="radio"].visually-hidden {
 }
 
 .miscellanea-item-left p {
-  margin: 0; 
-  margin-bottom: 4px; 
+  margin: 0;
+  margin-bottom: 4px;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
@@ -365,7 +388,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-address {
   margin: 0;
-  margin-bottom: 17px;  
+  margin-bottom: 17px;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -419,7 +442,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-button {
-  margin: 0;  
+  margin: 0;
   padding: 10px 27px;
   font-size: 18px;
   line-height: 24px;
@@ -427,11 +450,24 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
   list-style: none;
+  outline: 10px solid red;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   color: #ffffff;
+  background-color: transparent;
+  /*подобрать прозрачность*/
+  opacity: 1;
 }
 
 .footer-documents-list {
@@ -669,7 +705,7 @@ body {
   /* Для демонстрации */
   /*min-height: 100vh;*/
   /*outline: 5px dashed white;*/
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
 }
 
 .site-wrapper::before,
@@ -693,12 +729,12 @@ body {
   /* Для демонстрации */
   min-height: 100vh;
   outline: 1px solid yellow;
-  background-color: rgba(132, 157, 143, 0.1);
+  background-color: transparent;
 }
 
 .main-header {
   margin: 0;
-  padding: 0;
+  padding: 0 27px;
   /*удалить*/
   height: 120px;
   outline: 10px solid rgba(255, 0, 0, 1);
@@ -738,7 +774,7 @@ body {
   z-index: 20;
   font-size: 0;
   /*удалить*/
-  outline: 10px solid rgba(255, 0, 0, 1);    
+  outline: 10px solid rgba(255, 0, 0, 1);
 }
 
 .slider-controls label {
@@ -787,40 +823,8 @@ body {
 }
 
 .main-navigation {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 auto;
-  padding: 0;
-  width: 1146px;
-  /* --- временно для сетки --- */
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.main-navigation-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  /* --- временно для сетки --- */
-  /*min-height: 74px;*/
-  background: transparent;
-  outline: 1px solid blue;
-}
-
-.main-header-phones {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  min-width: 200px;
-  min-height: 44px;
-  background: transparent;
-  outline: 1px solid blue;
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -831,21 +835,13 @@ body {
   margin: 0;
   margin-top: 9px;
   margin-right: 24px;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid yellow;
 }
 
 .site-navigation {
   margin: 0;
-  margin-top: 6px;
+  margin-top: 28px;
   padding: 0;
   list-style: none;
-  /*временно*/
-  min-width: 400px;
-  height: 20px;
-  background: transparent;
-  outline: 1px solid yellow;
 }
 
 .user-navigation {
@@ -855,15 +851,24 @@ body {
   padding: 0;
   list-style: none;
   /*временно*/
-  min-width: 270px;
+  min-width: 300px;
   min-height: 35px;
   background: transparent;
   outline: 1px solid yellow;
 }
 
-.main-container {
-  /* --- временно для сетки --- */
-  outline: 1px solid green;
+.main-header-phones {
+  position: absolute;
+  top: 150px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  /*временно*/
+  min-width: 200px;
+  min-height: 44px;
+  text-align: right;
+  background: transparent;
+  outline: 10px solid red;
 }
 
 .offer-list {
@@ -1004,7 +1009,6 @@ body {
   font-weight: 500;
   line-height: 30px;
   color: #323232;
-
 }
 
 .features-list {
@@ -1085,7 +1089,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  min-height: 220px;  
+  min-height: 220px;
   /* --- временно для сетки --- */
   background: transparent;
 }
@@ -1110,6 +1114,7 @@ body {
   background-position: 116% 20%;
   background-repeat: no-repeat;
 }
+
 .miscellanea-item-right {
   margin: 0;
   padding: 0;
@@ -1150,36 +1155,28 @@ body {
   padding: 33px 25px 0px 25px;
   width: 302px;
   min-height: 310px;
-  background-color: rgba(255, 255, 255, 0.98);  
+  background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
 }
 
 .main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
   margin-top: 18px;
-  padding: 0;
-  min-height: 60px;
+  padding: 0 27px;
+  min-height: 40px;
   /*временно*/
   background: transparent;
   outline: 10px solid rgba(255, 0, 0, 1);
 }
 
-.main-footer .container {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 0;
-  width: 1146px;
-  min-height: 60px;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid red;
-}
-
 .footer-social {
   margin: 0;
-  margin-top: 18px;
-  margin-right: 215px;
+  margin-top: 0;
+  margin-right: 235px;
   padding: 0;
   /*временно*/
   min-width: 186px;
@@ -1188,15 +1185,34 @@ body {
   outline: 1px solid yellow;
 }
 
-.footer-documents {
+.footer-documents-list-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 11px;
   padding: 0;
-  /*временно*/
-  min-width: 330px;
-  height: 40px;
-  background: transparent;
-  outline: 1px solid yellow;
+  width: 144px;
+  list-style: none;
+  background-color: transparent;
+}
+
+.footer-documents-list-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  margin-top: 11px;
+  padding: 0;
+  width: 200px;
+  list-style: none;
+}
+
+.footer-documents-item {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .footer-copyright {
