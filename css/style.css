@@ -7,8 +7,6 @@
 html,
 body {
   box-sizing: border-box;
-/*убрать высоту*/
-  min-height: 2500px; 
 }
 
 body {
@@ -21,7 +19,7 @@ body {
   color: #ffffff;
   background-color: #849d8f;
 /*удалить подложку*/
-  background-image: url(../img/gllacy-index-grid1.jpg);
+  /*background-image: url(../img/gllacy-index-grid.jpg);*/
   /*background-image: url(../img/gllacy-catalog-grid.jpg);*/
   background-size: 1200px auto;
   background-repeat: no-repeat;
@@ -88,21 +86,6 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-/*мои первоначальные кнопки*/
-
-/*
-.button:hover,
-.button:focus {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-}
-
-.button:active {
-  color: #fceeec;
-  background-image: linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
-}*/
-
 /* --- Обертка слайдера --- */
 
 .site-wrapper {
@@ -112,8 +95,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
-/*удалить*/
-  background-color: transparent;
 }
 
 .site-wrapper::before,
@@ -137,10 +118,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   /* Для демонстрации */
-  min-height: 100vh;
+/*  min-height: 100vh;
   outline: 1px solid yellow;
   background-color: transparent;
-}
+*/}
 
  /* --- Фоновый слайдер --- */
 
@@ -197,17 +178,17 @@ input[type="radio"].visually-hidden {
 }
 
 #product-1:checked~.site-wrapper {
-  /*background-color: #849d8f;*/
+  background-color: #849d8f;
   background-image: url("../img/slider-1.png");
 }
 
 #product-2:checked~.site-wrapper {
-  /*background-color: #8996a6;*/
+  background-color: #8996a6;
   background-image: url("../img/slider-2.png");
 }
 
 #product-3:checked~.site-wrapper {
-  /*background-color: #9d8b84;*/
+  background-color: #9d8b84;
   background-image: url("../img/slider-3.png");
 }
 
@@ -294,8 +275,8 @@ input[type="radio"].visually-hidden {
   padding: 5px 15px;
   color: #333333;
   background-color: #f7f6f3;
-  border-radius: 15px;  
-  border-bottom: none;  
+  border-radius: 15px;
+  border-bottom: none;
 }
 
 .site-navigation a:active {
@@ -356,8 +337,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .user-navigation-search-link {
  position: relative;
- padding-right: 15px;
- padding-left: 15px;
+ padding-right: 17px;
+ padding-left: 17px;
  border-radius: 50%;
 }
 
@@ -365,7 +346,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 7px;
-  left: 5px;
+  left: 9px;
   width: 17px;
   height: 17px;
   background-image: url("../img/loupe.svg");
@@ -444,14 +425,14 @@ input[type="radio"].visually-hidden {
 .main-header-phones-number {
   font-size: 22px;
   line-height: 24px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 
 /* --- Баннеры --- */
 
 .bunners {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0 27px;
 }
 
@@ -461,7 +442,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  list-style: none;  
+  list-style: none;
 }
 
 .bunners-item {
@@ -514,7 +495,7 @@ input[type="radio"].visually-hidden {
   right: 19px;
   margin: 0;
   padding: 0;
-  text-align: right;  
+  text-align: right;
 }
 
 .bunners-item-left-image {
@@ -527,19 +508,70 @@ input[type="radio"].visually-hidden {
 
  /* --- Каталог и хиты --- */
 
+.catalog {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
 .catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0;
+  width: 1172px;
   list-style: none;
 }
 
 .catalog-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 293px;
+  min-height: 290px;
   text-align: center;
 }
 
 .catalog-item:hover {
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+/*удалить*/
+  background-color: red;
+
+}
+
+.catalog-item:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  background: transparent;
+  z-index: -1;
+}
+
+.catalog-item:hover .catalog-button-container {
+  display:block;
+}
+
+.catalog-item h3 {
+  z-index: 15;
+  order: 1;
+  margin: 0;
+  margin-top: -11px;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.catalog-image img {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .catalog-item a {
@@ -552,11 +584,40 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-price {
+  position: absolute;
+  top: 179px;
+  left: 12px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-hit {
+  position: absolute;
+  top: 0;
+  left: 13px;
+}
+
+.catalog-button-container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  bottom: -80px;
+  padding: 20px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+/*удалить*/
+  background-color: red;
+}
+
+.catalog-button {
+  z-index: 3;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .catalog-weight {
@@ -569,7 +630,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 32px;
   padding: 0 27px;
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 .features p {
@@ -607,7 +668,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  list-style: none;  
+  list-style: none;
 }
 
 .features-item {
@@ -688,7 +749,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   min-height: 220px;
-  list-style: none;  
+  list-style: none;
   /* --- временно для сетки --- */
   background: transparent;
 }
@@ -748,10 +809,18 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   min-height: 220px;
-  background-color: #ffffff;
-  /*временно*/
-  background-color: transparent;
-  outline: 10px solid rgba(255, 0, 0, 1);
+  background-color: #f8f7f4;
+  background-image: url(../img/bg-post.svg);
+}
+
+.miscellanea-item-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  padding: 13px 20px;
+  min-height: 208px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
 }
 
 .miscellanea-item-right p {
@@ -761,10 +830,20 @@ input[type="radio"].visually-hidden {
   text-align: left;
   color: #5a5a5a;
   background-color: #f8f7f4;
-  border-radius: 10px;
+}
+
+.miscellanea-email-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .miscellanea-email-form-item input {
+  width: 368px;
+  height: 45px;
+  margin: 0;
+  padding: 0 15px;
   font: inherit;
   font-size: 16;
   line-height: 24px;
@@ -784,7 +863,7 @@ input[type="radio"].visually-hidden {
 }
 
 .miscellanea-button {
-  padding: 13px 22px;
+  padding: 12px 16px;
   font-size: 18px;
   line-height: 24px;
   border-radius: 40px;
@@ -910,6 +989,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 35px;
   margin-right: 236px;
+  margin-bottom: 20px;
   padding: 0;
   min-width: 186px;
   list-style: none;
@@ -934,7 +1014,7 @@ input[type="radio"].visually-hidden {
 /* --- Обязательная информация --- */
 
 .footer-documents-list-first {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
@@ -1279,38 +1359,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-.catalog {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-  /*удалить*/
-  min-height: 350px;
-  outline: 10px solid rgba(255, 0, 0, 1);
-}
-
-.catalog-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 0;
-  width: 1172px;
-  /* --- временно для сетки --- */
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.catalog-item {
-  margin: 0;
-  /*  margin-top: -20px;*/
-  padding: 0;
-  /*временно*/
-  width: 293px;
-  height: 360px;
-  background: transparent;
-  outline: 1px solid yellow;
-}
 
 
 .catalog-container {
