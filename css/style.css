@@ -18,9 +18,9 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #849d8f;
-/*удалить подложку*/
+  /*удалить подложку*/
   /*background-image: url(../img/gllacy-index-grid.jpg);*/
-  /*background-image: url(../img/gllacy-catalog-grid.jpg);*/
+  background-image: url(../img/gllacy-catalog-grid.jpg);
   background-size: 1200px auto;
   background-repeat: no-repeat;
   background-position: top center;
@@ -95,6 +95,12 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
+  /*удалить*/
+  background-color: transparent;
+}
+
+.site-wrapper-inner-page {
+  background-image: none;
 }
 
 .site-wrapper::before,
@@ -118,12 +124,12 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   /* Для демонстрации */
-/*  min-height: 100vh;
+  min-height: 100vh;
   outline: 1px solid yellow;
   background-color: transparent;
-*/}
+}
 
- /* --- Фоновый слайдер --- */
+/* --- Фоновый слайдер --- */
 
 .slider {
   position: relative;
@@ -336,10 +342,10 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .user-navigation-search-link {
- position: relative;
- padding-right: 17px;
- padding-left: 17px;
- border-radius: 50%;
+  position: relative;
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 50%;
 }
 
 .user-navigation-search-link::before {
@@ -359,9 +365,9 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .user-navigation-logo-link {
- position: relative;
- padding-right: 15px;
- padding-left: 45px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 45px;
 }
 
 .user-navigation-logo-link::before {
@@ -381,10 +387,10 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .user-navigation-cart-link {
- position: relative;
- width: 100px;
- padding-right: 33px;
- padding-left: 45px;
+  position: relative;
+  width: 100px;
+  padding-right: 15px;
+  padding-left: 45px;
 }
 
 .user-navigation-cart-link::before {
@@ -415,6 +421,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
 .main-header-phones-shedule {
   margin-bottom: 4px;
   font-size: 14px;
@@ -506,7 +513,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/bunner-right.jpg") no-repeat #452b1f;
 }
 
- /* --- Каталог и хиты --- */
+/* --- Каталог и хиты --- */
 
 .catalog {
   margin: 0;
@@ -537,12 +544,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #9bafa3;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-/*удалить*/
-  background-color: red;
-
 }
 
 .catalog-item:hover::before {
@@ -556,7 +560,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item:hover .catalog-button-container {
-  display:block;
+  display: block;
 }
 
 .catalog-item h3 {
@@ -607,11 +611,9 @@ input[type="radio"].visually-hidden {
   bottom: -80px;
   padding: 20px;
   z-index: 3;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #9bafa3;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-/*удалить*/
-  background-color: red;
 }
 
 .catalog-button {
@@ -999,7 +1001,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  color:  rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   background-color: transparent;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -1007,7 +1009,7 @@ input[type="radio"].visually-hidden {
 
 .social-button:hover,
 .social-button:focus {
-  color:  rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -1187,20 +1189,77 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
-/* --- Внутренняя страница --- */
+/* --- Стили внутренней страницы --- */
+
+/* --- Шапка на внутренней --- */
+
+.main-header-inner {
+  margin: 0;
+  padding: 0 27px;
+  height: 95px;
+}
+
+/* --- Крошки и название страницы --- */
+
+.catalog-navigation {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 27px;
+  min-height1: 160px;
+}
+
+/* --- Название страницы --- */
 
 .page-title {
+  margin: 0;
+  padding: 0;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
+  height: 44px;
+  /*временно*/
+  background: transparent;
 }
 
+/* --- Хлебный крошки --- */
+
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+  width: 75%;
   list-style: none;
 }
 
+.breadcrumbs li {
+  position: relative;
+  margin-right: 21px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "\00BB";
+  position: absolute;
+  top: 3px;
+  right: -14px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 .breadcrumbs a {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1215,11 +1274,48 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-current {
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
 }
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+/* --- Фильтры --- */
+
+.filters {
+  margin: 0;
+  padding: 0 27px;
+  height: 180px;
+  /*временно*/
+  /*удалить*/
+  background-color: transparent;
+  outline: 10px solid red;
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 860px;
+}
+
+.filters-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* --- Пагинация --- */
 
 .pagination-list {
   list-style: none;
@@ -1286,8 +1382,85 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
+/* ----- Стили для сеток ----- */
+
+/*.catalog-container {
+  margin: 0;
+  margin-top: -20px;
+  padding: 0;
+  временно
+  min-height: 60px;
+  background: transparent;
+  outline: 1px solid green;
+}
+*/
+
+/*.catalog-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 0;
+  width: 1146px;
+  min-height: 60px;
+  /*временно*/
+
+/*  background: transparent;
+  outline: 1px solid red;
+}
+*/
+
+
+
+.filters-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1146px;
+  /*временно*/
+  min-height: 130;
+  background: transparent;
+  outline: 1px solid red;
+}
+
+/*переделать контейнер*/
+
+.filters-wrapper .container {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 860px;
+  height: 134px;
+  background: transparent;
+  outline: 1px solid blue;
+}
+
+.pagination-list-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 1146px;
+  /*временно*/
+  min-height: 130;
+  background: transparent;
+  outline: 1px solid red;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  /*временно*/
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  outline: 1px solid blue;
+}
+
 /*остатки старого проверить*/
 
+/*
 .offer-list {
   list-style: none;
 }
@@ -1330,12 +1503,9 @@ input[type="radio"].visually-hidden {
 .slider-bullet-item-current {
   background-color: #ffffff;
 }
+*/
 
-
-/* ----- Стили для сеток ----- */
-
-
-.offer-list {
+/*.offer-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1343,116 +1513,24 @@ input[type="radio"].visually-hidden {
   margin-top: -120px;
   padding: 0;
   width: 1146px;
-  /* --- временно для сетки --- */
-  min-height: 900px;
+*/
+
+/* --- временно для сетки --- */
+
+/*  min-height: 900px;
   background: transparent;
   outline: 1px solid red;
 }
 
 .offer-item {
   margin: 0;
-  /*временно*/
-  width: 100%;
+*/
+
+/*временно*/
+
+/*  width: 100%;
   height: 100%;
   background: transparent;
   outline: 1px solid yellow;
 }
-
-
-
-
-.catalog-container {
-  margin: 0;
-  margin-top: -20px;
-  padding: 0;
-  /*временно*/
-  min-height: 60px;
-  background: transparent;
-  outline: 1px solid green;
-}
-
-.catalog-container-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  padding: 0;
-  width: 1146px;
-  min-height: 60px;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.page-title {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  width: 250px;
-  height: 20px;
-  background: transparent;
-  outline: 1px solid yellow;
-}
-
-.breadcrumbs {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  width: 400px;
-  height: 44px;
-  background: transparent;
-  outline: 1px solid yellow;
-}
-
-.filters {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  background: transparent;
-  outline: 1px solid green;
-}
-
-.filters-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: 1146px;
-  /*временно*/
-  min-height: 130;
-  background: transparent;
-  outline: 1px solid red;
-}
-
-/*переделать контейнер*/
-.filters-wrapper .container {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  width: 860px;
-  height: 134px;
-  background: transparent;
-  outline: 1px solid blue;
-}
-
-.pagination-list-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding: 0;
-  width: 1146px;
-  /*временно*/
-  min-height: 130;
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.pagination-list {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  width: 200px;
-  height: 40px;
-  background: transparent;
-  outline: 1px solid blue;
-}
+*/
