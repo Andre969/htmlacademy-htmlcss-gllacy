@@ -20,7 +20,7 @@ body {
   background-color: #849d8f;
   /*удалить подложку*/
   /*background-image: url(../img/gllacy-index-grid.jpg);*/
-  background-image: url(../img/gllacy-catalog-grid.jpg);
+  /*background-image: url(../img/gllacy-catalog-grid.jpg);*/
   background-size: 1200px auto;
   background-repeat: no-repeat;
   background-position: top center;
@@ -256,7 +256,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
 .site-navigation a::after {
@@ -290,6 +289,19 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   border-bottom: none;
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+.site-navigation .site-navigation-item-link-active {
+  margin: 0;
+  padding: 5px 15px;
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 15px;
+  border-bottom: none;
+}
+
+.site-navigation .site-navigation-item-link-active::after {
+  display: none;
 }
 
 .site-navigation>li {
@@ -537,6 +549,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
   width: 293px;
   min-height: 290px;
@@ -1206,8 +1219,8 @@ input[type="radio"].visually-hidden {
   flex-direction: column-reverse;
   justify-content: flex-end;
   margin: 0;
+  margin-bottom: 23px;
   padding: 0 27px;
-  min-height1: 160px;
 }
 
 /* --- Название страницы --- */
@@ -1291,12 +1304,9 @@ input[type="radio"].visually-hidden {
 
 .filters {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0 27px;
-  height: 180px;
-  /*временно*/
-  /*удалить*/
-  background-color: transparent;
-  outline: 10px solid red;
+  height: 133px;
 }
 
 .filters-form {
@@ -1304,25 +1314,351 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-around;
+  align-content: space-between;
   margin: 0;
   padding: 0;
   width: 860px;
+  height: 133px;
 }
 
 .filters-form fieldset {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
 }
-/* --- Пагинация --- */
 
-.pagination-list {
+.filters-form legend {
+  margin: 0;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+}
+
+.filters-button {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  width: 145px;
+  height: 36px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.188);
+  background-image: none;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+
+.filters-option {
+  margin: 10px 0 10px 50px;
+  padding: 0;
+}
+
+.filters-option:first-child {
+  margin-left: 45px;
+}
+
+.filters-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sorting-select {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  width: 100%;
+  height: 35px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+}
+
+.sorting-select option {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.filters-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-fieldset-sorting {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 195px;
+}
+
+.filters-fieldset-range {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+.filters-fieldset-fat {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 415px;
+}
+
+.fatness-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
   list-style: none;
 }
 
-.pagination-item a {
+.filters-fieldset-filler {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 705px;
+}
+
+.filler-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  list-style: none;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto;
+  /* для демо */
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* --- Ползунок --- */
+
+.filters-fieldset-range {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.range-filter {
+/*  position: relative;*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*margin-top: 10px;*/
+}
+
+.range-controls {
+  position: relative;
+  height: 35px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+}
+
+.range-controls .scale {
+  height: 5px;
+  background-color: rgba(248, 247, 244, 0.502);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 5px;
+  background-color: rgba(248, 247, 244, 1);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 20px;
+  height: 23px;
+  padding: 0;
+  background-image: url(../img/filter-button.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 35px;
+}
+
+.range-controls .toggle-max {
+  left: 135px;
+}
+
+.price-controls {
+  position: absolute;
+  top: 0;
+  left: 42px;
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+}
+
+.price-controls input {
+  margin: 0;
+  margin-left: 16px;
+  padding: 0;
+  width: 24px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+.max-price {
+  margin-left: -10px;
+}
+
+/* --- Пагинация --- */
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0 27px;
+  /*удалить*/
+  background-color: transparent;
+  outline: 10px solid red;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  /*временно*/
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  outline: 1px solid blue;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 5px;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .pagination-item a:hover,
@@ -1344,12 +1680,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.filters-button {
-  padding: 13px 22px;
-  font-size: 18px;
-  line-height: 24px;
-  border-radius: 40px;
-}
+/* --- Модальные окна внутренней страницы --- */
 
 .modal-product-view-button {
   padding: 13px 22px;
@@ -1382,155 +1713,16 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
-/* ----- Стили для сеток ----- */
-
-/*.catalog-container {
-  margin: 0;
-  margin-top: -20px;
-  padding: 0;
-  временно
-  min-height: 60px;
-  background: transparent;
-  outline: 1px solid green;
-}
-*/
-
-/*.catalog-container-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  padding: 0;
-  width: 1146px;
-  min-height: 60px;
-  /*временно*/
-
-/*  background: transparent;
-  outline: 1px solid red;
-}
-*/
-
-
-
-.filters-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: 1146px;
-  /*временно*/
-  min-height: 130;
-  background: transparent;
-  outline: 1px solid red;
-}
-
-/*переделать контейнер*/
-
-.filters-wrapper .container {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  width: 860px;
-  height: 134px;
-  background: transparent;
-  outline: 1px solid blue;
-}
-
-.pagination-list-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding: 0;
-  width: 1146px;
-  /*временно*/
-  min-height: 130;
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.pagination-list {
-  margin: 0;
-  padding: 0;
-  /*временно*/
-  width: 200px;
-  height: 40px;
-  background: transparent;
-  outline: 1px solid blue;
-}
-
-/*остатки старого проверить*/
-
-/*
-.offer-list {
-  list-style: none;
-}
-
-.offer-item {
-  text-align: center;
-  color: #ffffff;
-}
-
-.offer-item h3 {
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-}
-
-.slider-bullet-list {
-  text-align: left;
-}
-
-.slider-bullet-list button {
-  padding: 10px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-}
-
-.slider-bullet-item {
-  background-color: transparent;
-}
-
-.slider-bullet-item:hover,
-.slider-bullet-item:focus {
-  background-color: rgba(248, 247, 244, 0.4);
-  cursor: pointer;
-}
-
-.slider-bullet-item:active {
-  background-color: #ffffff;
-}
-
-.slider-bullet-item-current {
-  background-color: #ffffff;
-}
-*/
-
-/*.offer-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: -120px;
-  padding: 0;
-  width: 1146px;
-*/
-
-/* --- временно для сетки --- */
-
-/*  min-height: 900px;
-  background: transparent;
-  outline: 1px solid red;
-}
-
-.offer-item {
-  margin: 0;
-*/
-
-/*временно*/
-
-/*  width: 100%;
-  height: 100%;
-  background: transparent;
-  outline: 1px solid yellow;
-}
-*/
+/* --- TODO LIST --- */
+/*Спросить о селекторе для выбора цвета фона карточки в зависимости от фона сайта*/
+/*Стилизовать выпадающее меню в каталоге*/
+/*Выровнять кнопки, тексты и чекеры в фильтрах*/
+/*Стилизовать кнопку в фильтрах*/
+/*Стилизовать и выровнять пагинацию*/
+/*Спросить как сделать наведение на кнопках слайдера*/
+/*Сделать карту ифреймом*/
+/*Сделать модальные окна*/
+/*Оживить интерактивные элементы*/
+/*Удалить подложки дизайна из директории рисунков*/
+/*Слить сетки с основными файлами сайта*/
+/*Вычистить код CSS от демонстрационных правил*/
