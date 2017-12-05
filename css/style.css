@@ -202,7 +202,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin: 0;
-  padding: 0 27px;
+  padding: 0 26px 0 27px;
   height: 120px;
 }
 
@@ -219,7 +219,7 @@ input[type="radio"].visually-hidden {
   width: 154px;
   height: 64px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-right: 9px;
 }
 
@@ -237,7 +237,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   position: relative;
-  margin: 5px 15px;
+  margin: 5px 14px;
   padding: 0;
   border-radius: 15px;
   font-size: 16px;
@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   align-items: center;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 2px;
   margin-left: auto;
   padding: 0;
   list-style: none;
@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   margin: 0;
   margin-left: 10px;
-  padding: 8px;
+  padding: 0;
   height: 30px;
   border-radius: 20px;
   font-size: 14px;
@@ -343,8 +343,9 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .user-navigation-search-link {
   position: relative;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 7px 17px 8px 16px;
+  /*padding-right: 17px;*/
+  /*padding-left: 17px;*/
   border-radius: 50%;
 }
 
@@ -352,7 +353,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 7px;
-  left: 9px;
+  left: 8px;
   width: 17px;
   height: 17px;
   background-image: url("../img/loupe.svg");
@@ -366,8 +367,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .user-navigation-logo-link {
   position: relative;
-  padding-right: 15px;
-  padding-left: 45px;
+  padding: 7px 16px 8px 44px;
 }
 
 .user-navigation-logo-link::before {
@@ -384,6 +384,28 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-logo-link:hover::before {
   background-image: url("../img/entrance-black.svg");
+}
+
+.user-navigation .user-navigation-cart-link-empty {
+  position: relative;
+  width: 140px;
+  padding: 7px 35px 8px 44px;
+}
+
+.user-navigation-cart-link-empty::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation-cart-link-empty:hover::before {
+  background-image: url("../img/basket-red.svg");
 }
 
 .user-navigation .user-navigation-cart-link {
@@ -416,13 +438,15 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  top: 74px;
-  right: 0;
+  top: 73px;
+  right: 1px;
   margin: 0;
   padding: 0;
 }
 
 .main-header-phones-shedule {
+  margin: 0;
+  padding: 0;
   margin-bottom: 4px;
   font-size: 14px;
   line-height: 16px;
@@ -430,6 +454,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-phones-number {
+  margin: 0;
+  margin-right: -1px;
+  padding: 0;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -517,7 +544,7 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -599,6 +626,20 @@ input[type="radio"].visually-hidden {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+.catalog-cy {
+  margin: 0;
+  margin-left: -7px;
+  padding: 0;
+  font-size: 42px;
+}
+
+.catalog-weight {
+  margin: 0;
+  margin-left: -8px;
+  padding: 0;
+  font-size: 30px;
+}
+
 .catalog-hit {
   position: absolute;
   top: 0;
@@ -623,15 +664,11 @@ input[type="radio"].visually-hidden {
   padding-right: 25px;
 }
 
-.catalog-weight {
-  font-size: 30px;
-}
-
 /* --- Особенности --- */
 
 .features {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 41px;
   padding: 0 27px;
   background-color: transparent;
 }
@@ -650,6 +687,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   margin: 0;
   padding: 25px 20px;
+  padding-bottom: 15px;
   background: url("../img/waffer.png") repeat #efe2ca;
   border-radius: 15px;
 }
@@ -707,7 +745,7 @@ input[type="radio"].visually-hidden {
   width: 204px;
   height: 204px;
   background-color: transparent;
-  background-image: url("../img/eco.svg");
+  background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
 }
 
@@ -719,7 +757,7 @@ input[type="radio"].visually-hidden {
   width: 204px;
   height: 204px;
   background-color: transparent;
-  background-image: url("../img/cow.svg");
+  background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
 }
 
@@ -741,7 +779,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 40px;
   padding: 0 27px;
-  /*временно*/
   min-height: 220px;
 }
 
@@ -758,7 +795,6 @@ input[type="radio"].visually-hidden {
 .miscellanea-item {
   margin: 0;
   padding: 0;
-  width: 560px;
   min-height: 220px;
   background-color: transparent;
   border-radius: 15px;
@@ -770,10 +806,11 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   margin: 0;
   padding: 23px 19px;
+  width: 560px;
   min-height: 220px;
   background-color: #ffffff;
   background-image: url("../img/news-1.jpg");
-  background-position: 116% 20%;
+  background-position: 204px -36px;
   background-repeat: no-repeat;
 }
 
@@ -809,6 +846,7 @@ input[type="radio"].visually-hidden {
 .miscellanea-item-right {
   margin: 0;
   padding: 0;
+  width: 560px;
   min-height: 220px;
   background-color: #f8f7f4;
   background-image: url(../img/bg-post.svg);
@@ -817,14 +855,17 @@ input[type="radio"].visually-hidden {
 .miscellanea-item-right-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 6px;
-  padding: 13px 20px;
+  margin: 5px 5px 5px 6px;
+  padding: 29px 20px 1px 21px;
   min-height: 208px;
   background-color: #f8f7f4;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .miscellanea-item-right p {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -837,14 +878,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .miscellanea-email-form-item input {
-  width: 368px;
-  height: 45px;
+  width: 367px;
+  height: 44px;
   margin: 0;
-  padding: 0 15px;
+  padding: 0 13px;
   font: inherit;
   font-size: 16;
   line-height: 24px;
@@ -864,9 +907,11 @@ input[type="radio"].visually-hidden {
 }
 
 .miscellanea-button {
-  padding: 12px 16px;
+  margin: 0;
+  padding: 9px 19px 11px 19px;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 500;
   border-radius: 40px;
 }
 
@@ -899,9 +944,9 @@ input[type="radio"].visually-hidden {
   bottom: 62px;
   right: 27px;
   margin: 0;
-  padding: 33px 25px 0px 25px;
+  padding: 28px 25px 0px 25px;
   width: 302px;
-  min-height: 310px;
+  min-height: 305px;
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
 }
