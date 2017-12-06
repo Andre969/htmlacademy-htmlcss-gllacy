@@ -51,9 +51,39 @@
                 <a class="user-navigation-search-link" href="search.html">
                   <span class="visually-hidden">Поиск</span>
                 </a>
+                <section class="modal modal-search">
+                  <h2 class="visually-hidden">Поиск по сайту</h2>
+                  <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+                    <p>
+                      <label class="visually-hidden" for="search-field">Поиск</label>
+                      <input id="search-field" type="text" name="search" value="" placeholder="Что ищем?"/>
+                    </p>
+                  </form>
+                </section>
               </li>
               <li class="user-navigation-logo">
                 <a class="user-navigation-logo-link" href="login.html">Вход</a>
+                <section class="modal modal-login" id="modal-login">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                      <label class="visually-hidden" for="login-field">Логин</label>
+                      <input id="login-field" type="text" name="login" value="" placeholder="Электронная почта"/>
+                    </p>
+                    <p>
+                      <label class="visually-hidden" for="password-field">Пароль</label>
+                      <input id="password-field" type="password" name="password" value="" placeholder="Пароль"/>
+                    </p>
+                    <div class="login-help-wrapper">
+                      <p>
+                        <a href="#">Забыли пароль?</a>
+                        <br/>
+                        <a href="#">Новая регистрация</a>
+                      </p>
+                      <button class="button modal-login-button" type="submit">Войти</button>
+                    </div>
+                  </form>
+                </section>
               </li>
               <li class="user-navigation-cart">
                 <a class="user-navigation-cart-link-empty" href="cart.html">Пусто</a>
@@ -111,17 +141,19 @@
             <h2 class="visually-hidden">Хиты</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <h3>
-                  <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                </h3>
-                <p class="catalog-image">
-                  <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"/>
-                </p>
-                <p class="catalog-price">
-                  310
-                  <span class="visually-hidden">₽</span>
-                  <span class="catalog-weight">/кг</span>
-                </p>
+                <div class="catalog-item-wrapper">
+                  <h3>
+                    <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                  </h3>
+                  <p class="catalog-image">
+                    <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"/>
+                  </p>
+                  <p class="catalog-price">
+                    310
+                    <span class="visually-hidden">₽</span>
+                    <span class="catalog-weight">/кг</span>
+                  </p>
+                </div>
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
@@ -131,17 +163,19 @@
                 </p>
               </li>
               <li class="catalog-item">
-                <h3>
-                  <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
-                </h3>
-                <p class="catalog-image">
-                  <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"/>
-                </p>
-                <p class="catalog-price">
-                  380
-                  <span class="visually-hidden">₽</span>
-                  <span class="catalog-weight">/кг</span>
-                </p>
+                <div class="catalog-item-wrapper">
+                  <h3>
+                    <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
+                  </h3>
+                  <p class="catalog-image">
+                    <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"/>
+                  </p>
+                  <p class="catalog-price">
+                    380
+                    <span class="visually-hidden">₽</span>
+                    <span class="catalog-weight">/кг</span>
+                  </p>
+                </div>
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
@@ -151,17 +185,19 @@
                 </p>
               </li>
               <li class="catalog-item">
-                <h3>
-                  <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                </h3>
-                <p class="catalog-image">
-                  <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"/>
-                </p>
-                <p class="catalog-price">
-                  355
-                  <span class="visually-hidden">₽</span>
-                  <span class="catalog-weight">/кг</span>
-                </p>
+                <div class="catalog-item-wrapper">
+                  <h3>
+                    <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                  </h3>
+                  <p class="catalog-image">
+                    <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"/>
+                  </p>
+                  <p class="catalog-price">
+                    355
+                    <span class="visually-hidden">₽</span>
+                    <span class="catalog-weight">/кг</span>
+                  </p>
+                </div>
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
@@ -171,17 +207,19 @@
                 </p>
               </li>
               <li class="catalog-item">
-                <h3>
-                  <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
-                </h3>
-                <p class="catalog-image">
-                  <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"/>
-                </p>
-                <p class="catalog-price">
-                  415
-                  <span class="visually-hidden">₽</span>
-                  <span class="catalog-weight">/кг</span>
-                </p>
+                <div class="catalog-item-wrapper">
+                  <h3>
+                    <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
+                  </h3>
+                  <p class="catalog-image">
+                    <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"/>
+                  </p>
+                  <p class="catalog-price">
+                    415
+                    <span class="visually-hidden">₽</span>
+                    <span class="catalog-weight">/кг</span>
+                  </p>
+                </div>
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
@@ -335,36 +373,36 @@
           </footer>
         </div>
       </div>
-      <section class="modal modal-login" id="modal-login1">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="login-field">Логин</label>
-            <input id="login-field" type="text" name="login" value="" placeholder="Электронная почта"/>
-          </p>
-          <p>
-            <label class="visually-hidden" for="password-field">Пароль</label>
-            <input id="password-field" type="password" name="password" value="" placeholder="Пароль"/>
-          </p>
-          <div class="login-help-wrapper">
-            <p>
-              <a href="#">Забыли пароль?</a>
-              <br/>
-              <a href="#">Новая регистрация</a>
-            </p>
-            <button class="button modal-login-button" type="submit">Войти</button>
-          </div>
-        </form>
-      </section>
-      <section class="modal modal-search">
-        <h2 class="visually-hidden">Поиск по сайту</h2>
-        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label class="visually-hidden" for="search-field">Поиск</label>
-            <input id="search-field" type="text" name="search" value="" placeholder="Что ищем?"/>
-          </p>
-        </form>
-      </section>
+      <!--       <section class="modal modal-login" id="modal-login1">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="login-field">Логин</label>
+                  <input id="login-field" type="text" name="login" value="" placeholder="Электронная почта"/>
+                </p>
+                <p>
+                  <label class="visually-hidden" for="password-field">Пароль</label>
+                  <input id="password-field" type="password" name="password" value="" placeholder="Пароль"/>
+                </p>
+                <div class="login-help-wrapper">
+                  <p>
+                    <a href="#">Забыли пароль?</a>
+                    <br/>
+                    <a href="#">Новая регистрация</a>
+                  </p>
+                  <button class="button modal-login-button" type="submit">Войти</button>
+                </div>
+              </form>
+            </section> -->
+      <!--       <section class="modal modal-search">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+                <p>
+                  <label class="visually-hidden" for="search-field">Поиск</label>
+                  <input id="search-field" type="text" name="search" value="" placeholder="Что ищем?"/>
+                </p>
+              </form>
+            </section> -->
       <section class="modal modal-feedback">
         <h2>Мы обязательно вам ответим</h2>
         <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
