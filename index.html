@@ -141,7 +141,7 @@
             <h2 class="visually-hidden">Хиты</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div class="catalog-item-wrapper">
+                <div class="catalog-item-wrapper catalog-hit">
                   <h3>
                     <a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                   </h3>
@@ -157,13 +157,9 @@
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
-                <p class="catalog-hit">
-                  <span class="visually-hidden">Хит</span>
-                  <img src="img/hit.svg" width="61" height="61" alt="Хит"/>
-                </p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-wrapper">
+                <div class="catalog-item-wrapper catalog-hit">
                   <h3>
                     <a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
                   </h3>
@@ -179,13 +175,9 @@
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
-                <p class="catalog-hit">
-                  <span class="visually-hidden">Хит</span>
-                  <img src="img/hit.svg" width="61" height="61" alt="Хит"/>
-                </p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-wrapper">
+                <div class="catalog-item-wrapper catalog-hit">
                   <h3>
                     <a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
                   </h3>
@@ -201,13 +193,9 @@
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
                 </p>
-                <p class="catalog-hit">
-                  <span class="visually-hidden">Хит</span>
-                  <img src="img/hit.svg" width="61" height="61" alt="Хит"/>
-                </p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-wrapper">
+                <div class="catalog-item-wrapper catalog-hit">
                   <h3>
                     <a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
                   </h3>
@@ -222,10 +210,6 @@
                 </div>
                 <p class="catalog-button-container">
                   <a class="button catalog-button" href="#">Быстрый просмотр</a>
-                </p>
-                <p class="catalog-hit">
-                  <span class="visually-hidden">Хит</span>
-                  <img src="img/hit.svg" width="61" height="61" alt="Хит"/>
                 </p>
               </li>
             </ul>
@@ -340,17 +324,15 @@
                 </a>
               </li>
             </ul>
-            <ul class="footer-documents-list-first">
+            <ul class="footer-documents-list">
               <li class="footer-documents-item footer-documents-item-heart">
                 <a href="#">Для поставщиков</a>
               </li>
               <li class="footer-documents-item">
-                <a href="#">О производстве</a>
-              </li>
-            </ul>
-            <ul class="footer-documents-list-second">
-              <li class="footer-documents-item">
                 <a href="#">Наши документы</a>
+              </li>
+              <li class="footer-documents-item">
+                <a href="#">О производстве</a>
               </li>
               <li class="footer-documents-item">
                 <a href="#">Экологические стандарты</a>
@@ -382,7 +364,7 @@
           </p>
           <p class="modal-feedback-form-comments">
             <label class="visually-hidden" for="comment-field">Ваш комментарий</label>
-            <textarea id="comment-field" name="comment" rows="7">Напишите что-нибудь...</textarea>
+            <textarea id="comment-field" name="comment" rows="7" placeholder="Напишите что-нибудь..."></textarea>
           </p>
           <button class="button modal-feedback-button" type="submit">Отправить</button>
         </form>
