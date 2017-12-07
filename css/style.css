@@ -2130,7 +2130,8 @@ input:placeholder {
 }
 
 .range-controls .bar {
-  width: 70%;
+  margin-left: 18%;
+  width: 50%;
   height: 4px;
   background-color: rgba(248, 247, 244, 1);
 }
