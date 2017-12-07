@@ -335,12 +335,12 @@ input:placeholder {
   display: none;
 }
 
-.site-navigation>li {
-  display: block;
+.site-navigation .site-navigation-item-submenu {
+  display: inline-block;
   position: relative;
 }
 
-.catalog-sub-menu {
+.site-navigation .catalog-sub-menu {
   position: absolute;
   display: none;
   top: 32px;
@@ -408,12 +408,6 @@ input:placeholder {
   color: #323232;
 }
 
-.site-navigation .catalog-sub-menu-item:nth-child(2):hover,
-.site-navigation .catalog-sub-menu-item:hover {
-  /*  height: 28px;*/
-  background-color: #fbded7;
-}
-
 .site-navigation .catalog-sub-menu-item-link {
   display: inline-block;
   margin: 0;
@@ -432,8 +426,8 @@ input:placeholder {
   font-weight: 700;
 }
 
-.site-navigation .catalog-sub-menu-item-link:hover,
-.site-navigation .catalog-sub-menu-item-link:focus {
+.catalog-sub-menu-item .catalog-sub-menu-item-link:hover,
+.catalog-sub-menu-item .catalog-sub-menu-item-link:focus {
   display: inline-block;
   margin: 0;
   padding-top: 5px;
@@ -448,11 +442,26 @@ input:placeholder {
   border-radius: 0;
 }
 
-.site-navigation .catalog-sub-menu-item:first-child:active,
-.site-navigation .catalog-sub-menu-item:nth-child(2):active,
-.site-navigation .catalog-sub-menu-item:active {
-  /*  height: 28px;*/
+.catalog-sub-menu-item .catalog-sub-menu-item-link:active {
   background-color: #f6b5a5;
+}
+
+.catalog-sub-menu-item .catalog-sub-menu-item-link-current,
+.catalog-sub-menu-item .catalog-sub-menu-item-link-current:hover,
+.catalog-sub-menu-item .catalog-sub-menu-item-link-current:focus,
+.catalog-sub-menu-item .catalog-sub-menu-item-link-current:active {
+  display: inline-block;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 20px;
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 0;
 }
 
 /* --- Навигация пользователя --- */
@@ -730,7 +739,7 @@ input:placeholder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 0 auto;
   padding: 0;
   width: 1172px;
