@@ -1144,7 +1144,6 @@ textarea:placeholder {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  ;
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
@@ -1460,7 +1459,6 @@ textarea:placeholder {
   line-height: 24px;
   font-weight: 400;
   color: #323232;
-  ;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(178, 178, 178, 0.52);
   border-radius: 5px;
@@ -1510,6 +1508,7 @@ textarea:placeholder {
   color: #323232;
   background-color: rgb(248, 247, 244);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0;
 }
 
 .modal-login-form a:hover,
@@ -2459,15 +2458,3 @@ textarea:placeholder {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-
-/* --- TODO LIST --- */
-
-/*Сделать карту ифреймом*/
-
-/*Оживить интерактивные элементы*/
-
-/*Узнать, как стилизовать введенные данные в полях*/
-
-/*Устранить исчезновение выпадающих модальных окон*/
-
-/*фон в каталоге сделать градиентом*/
