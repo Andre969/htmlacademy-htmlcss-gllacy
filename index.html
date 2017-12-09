@@ -5,7 +5,7 @@
     <title>Магазин «Глейси»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"/>
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked/>
@@ -75,10 +75,9 @@
                       <input id="password-field" type="password" name="password" value="" placeholder="Пароль"/>
                     </p>
                     <div class="login-help-wrapper">
-                      <p>
-                        <a href="#">Забыли пароль?</a>
-                        <br/>
-                        <a href="#">Новая регистрация</a>
+                      <p class="login-help-links">
+                        <a class="login-help-links-item" href="#">Забыли пароль?</a>
+                        <a class="login-help-links-item" href="#">Новая регистрация</a>
                       </p>
                       <button class="button modal-login-button" type="submit">Войти</button>
                     </div>
@@ -262,19 +261,13 @@
               </p>
               <div class="contacts-info">
                 <p class="contacts-address">
-                  Адрес главного офиса
-                  <br/>
-                  и офлайн - магазина:
-                  <br/>
+                  <span>Адрес главного офиса и офлайн - магазина:</span>
                   <b>ул. Большая Конюшенная</b>
-                  <br/>
                   <b>19/8, Санкт-Петербург</b>
                 </p>
                 <p class="contacts-phones">
                   Для заказов по телефону:
-                  <br/>
                   <b>8 812 450-25-25</b>
-                  <br/>
                   <span>(с 10 до 20 ежедневно)</span>
                 </p>
                 <a class="button contacts-button" href="#">Форма обратной связи</a>
