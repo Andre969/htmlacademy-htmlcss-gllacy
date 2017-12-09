@@ -1812,6 +1812,7 @@ textarea:placeholder {
 }
 
 .filters-form {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2141,13 +2142,7 @@ textarea:placeholder {
   padding-right: 3px;
 }
 
-/* --- Ползунок --- */
-
-.filters-fieldset-range {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
+/* --- Два ползунка --- */
 
 .range-filter {
   margin: 0;
@@ -2203,7 +2198,7 @@ textarea:placeholder {
 .price-controls {
   position: absolute;
   top: 0;
-  left: 42px;
+  left: 249px;
   font-size: 0;
 }
 
