@@ -1507,7 +1507,6 @@ textarea:placeholder {
   color: rgba(232, 77, 55, 1);
 }
 
-
 .modal-login-form .login-help-links-item:hover::after,
 .modal-login-form .login-help-links-item:active::after,
 .modal-login-form .login-help-links-item:focus::after {
@@ -1517,7 +1516,7 @@ textarea:placeholder {
   top: 19px;
   width: 100%;
   height: 1px;
-  background:  rgba(232, 77, 55, 0.3);
+  background: rgba(232, 77, 55, 0.3);
 }
 
 .modal-search {
@@ -2028,6 +2027,13 @@ textarea:placeholder {
   opacity: 1;
 }
 
+.filters-input-radio:focus+label::before,
+.filters-input-radio:checked:focus+label::after {
+  opacity: 1;
+  outline: 1px dotted;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
 .filters-input-checkbox+label {
   margin: 0;
   padding: 0;
@@ -2068,6 +2074,13 @@ textarea:placeholder {
 .filters-input-checkbox+label:hover::before,
 .filters-input-checkbox:checked+label:hover::after {
   opacity: 1;
+}
+
+.filters-input-checkbox:focus+label::before,
+.filters-input-checkbox:checked:focus+label::after {
+  opacity: 1;
+  outline: 1px dotted;
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .filters-fieldset-sorting {
