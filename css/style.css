@@ -52,24 +52,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/* --- Плейсхолдеры --- */
-
-input::-webkit-input-placeholder,
-input::-moz-placeholder,
-input:-ms-input-placeholder,
-input:-moz-placeholder,
-input:placeholder {
-  color: #999999;
-}
-
-textarea::-webkit-input-placeholder,
-textarea::-moz-placeholder,
-textarea:-ms-input-placeholder,
-textarea:-moz-placeholder,
-textarea:placeholder {
-  color: #999999;
-}
-
 /* --- Кнопка --- */
 
 .button {
@@ -2823,4 +2805,58 @@ textarea:placeholder {
 .modal-error {
   -webkit-animation: shake 0.6s;
           animation: shake 0.6s;
+}
+
+/* --- Плейсхолдеры --- */
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999999;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999999;
+}
+
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999999;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999999;
+}
+
+input:placeholder {
+  color: #999999;
+}
+
+.feedback-textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999999;
+}
+
+.feedback-textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999999;
+}
+
+.feedback-textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999999;
+}
+
+.feedback-textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999999;
+}
+
+.feedback-textarea:placeholder {
+  color: #999999;
+}
+
+.feedback-textarea {
+  resize: none;
 }
