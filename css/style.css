@@ -2809,29 +2809,31 @@ input[type="radio"].visually-hidden {
 
 /* --- Плейсхолдеры --- */
 
-input::-webkit-input-placeholder {
+ .input-placeholder::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #999999;
 }
 
-input::-moz-placeholder {
+ .input-placeholder::-moz-placeholder {
   /* Firefox 19+ */
   color: #999999;
 }
 
-input:-ms-input-placeholder {
+ .input-placeholder:-ms-input-placeholder {
   /* IE 10+ */
   color: #999999;
 }
 
-input:-moz-placeholder {
+ .input-placeholder:-moz-placeholder {
   /* Firefox 18- */
   color: #999999;
 }
 
-input:placeholder {
+ .input-placeholder:placeholder {
   color: #999999;
 }
+
+/* --- Свойства для стилизации textarea --- */
 
 .feedback-textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
