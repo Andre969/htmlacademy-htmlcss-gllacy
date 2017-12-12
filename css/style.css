@@ -99,6 +99,7 @@ input[type="radio"].visually-hidden {
 /* --- Обертка слайдера --- */
 
 .site-wrapper {
+  padding-bottom: 39px;  
   min-width: 1200px;
   background-color: #849d8f;
   background-image: url("../img/slider-1.png");
@@ -114,6 +115,10 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/bg-catalog.png);
   background-repeat: repeat-x;
   background-position: top center;
+}
+
+.site-wrapper-footer {
+  background-color: #849d8f;
 }
 
 .site-wrapper::before,
@@ -231,6 +236,18 @@ input[type="radio"].visually-hidden {
 .product-radio-2~.site-wrapper .product-2:active,
 .product-radio-3~.site-wrapper .product-3:active {
   background-color: rgba(255, 255, 255, 1);
+}
+
+.product-radio-1:checked~.site-wrapper-footer {
+  background-color: #849d8f;
+}
+
+.product-radio-2:checked~.site-wrapper-footer {
+  background-color: #8996a6;
+}
+
+.product-radio-3:checked~.site-wrapper-footer {
+  background-color: #9d8b84;
 }
 
 /* --- Шапка сайта --- */
@@ -1053,7 +1070,6 @@ input[type="radio"].visually-hidden {
 
 .miscellanea {
   margin: 0;
-  margin-bottom: 39px;
   padding: 0 27px;
   min-height: 220px;
 }
@@ -1223,9 +1239,11 @@ input[type="radio"].visually-hidden {
 /* --- Карта с контактами --- */
 
 .contacts {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  width: 1200px;
+  width: 100%;
   height: 430px;
 }
 
@@ -1238,12 +1256,15 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 0;
+  margin: 0 auto;
+  margin-top: -430px;
   padding: 0;
+  width: 1200px;
+  height: 430px;
 }
 
 .contacts-map {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1200px;
   height: 430px;
